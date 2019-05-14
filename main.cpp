@@ -195,8 +195,8 @@ void monitoring_usb_devices(struct udev *udev)
 
         if (FD_ISSET(fd, &fds))
         {
-            struct udev_device *dev = udev_monitor_receive_device(monitor);
-            check_action_device(udev, dev);
+            struct udev_device *device = udev_monitor_receive_device(monitor);
+            check_action_device(udev, device);
         }
     }
 }
