@@ -3,7 +3,7 @@ Monitoring usb devices. libudev example.
 
 Пример использования библиотеки libudev. Тестировал на OpenSuse 15, AstraLinux 1.6.
 
-1. Основные функции
+1. Основные функции:
 
   udev_enumerate_new() - инициализирует поиск.
   
@@ -29,11 +29,12 @@ Monitoring usb devices. libudev example.
   
   udev_monitor_get_fd() - получает файл дескриптор, из которого можно отслеживать события.
   
-2. Получение свойств устройства
+2. Получение свойств устройства:
 
   udev_device_get_property_value() - получает значение заданного свойства
   
-  Список свойств usb устройства:
+  Список свойств usb устройства
+  
     BUSNUM
     
     DEVNAME = /dev/bus/usb/001/013
